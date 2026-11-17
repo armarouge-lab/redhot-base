@@ -1,0 +1,12 @@
+# D compiler outputs
+*.o
+*.a
+redhot-base
+
+# Build directory
+build/
+
+# Java artifacts (Phase 1.3 onwards)
+*.jar
+*.class
+*.jsa
