@@ -96,6 +96,8 @@ install: all
 		-XX:SharedArchiveFile=$(INSTALL_LIBDIR)/redhot.jsa \
 		-cp $(INSTALL_LIBDIR)/redhot-core.jar >/dev/null
 	rm -f /tmp/redhot-classes.lst
+	mkdir -p $(INSTALL_LIBDIR)/src
+	install -m 0644 src/*.d $(INSTALL_LIBDIR)/src/
 	@echo "[ OK ] installed to $(INSTALL_LIBDIR) and $(INSTALL_BINDIR)"
 
 uninstall:
